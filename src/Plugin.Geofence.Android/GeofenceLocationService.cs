@@ -43,7 +43,8 @@ namespace Plugin.Geofence
         public void OnLocationChanged(Android.Locations.Location location)
         {
             //Location Updated
-            System.Diagnostics.Debug.WriteLine(string.Format("{0} - {1}: {2},{3}", CrossGeofence.Id, "Location Update", location.Latitude, location.Longitude));
+            System.Diagnostics.Debug.WriteLine(
+                $"{CrossGeofence.Id} - Location Update: {location.Latitude},{location.Longitude}");
        
         }
     }
